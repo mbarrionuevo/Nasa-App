@@ -1,0 +1,48 @@
+{
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2021": true,
+      "jest": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "alias": {
+          "map": [["@", "./src"]]
+        }
+      }
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended", "prettier"],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "react-hooks", "prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": 0,
+      "no-underscore-dangle": 0,
+      "no-useless-escape": 0,
+      "no-console": "warn",
+      "no-alert": "error",
+      "arrow-body-style": ["error", "as-needed"],
+      "import/prefer-default-export": "off",
+      "import/no-unresolved": "off",
+      "no-param-reassign": ["error", { "props": false }],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "off",
+      "no-nested-ternary": "warn",
+      "react/display-name": 0,
+      "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return" }]
+    }
+  }
+  
